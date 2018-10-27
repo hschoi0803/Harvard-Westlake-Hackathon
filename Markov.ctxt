@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=base
+comment0.target=void\ writeBasedOnText(java.lang.String)
+comment1.params=file
+comment1.target=void\ learnFromText(java.lang.String)
+comment2.params=path\ encoding
+comment2.target=java.lang.String\ readFile(java.lang.String,\ java.nio.charset.Charset)
+numComments=3

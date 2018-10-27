@@ -1,0 +1,36 @@
+#BlueJ class context
+comment0.params=file
+comment0.target=Test1(java.lang.String)
+comment1.params=
+comment1.target=void\ initializeLineLength()
+comment10.params=t
+comment10.target=java.lang.String\ freeform(java.lang.String)
+comment11.params=t\ increment
+comment11.target=java.lang.String\ betterMeter(java.lang.String,\ int)
+comment12.params=path\ encoding
+comment12.target=java.lang.String\ readFile(java.lang.String,\ java.nio.charset.Charset)
+comment13.params=s
+comment13.target=void\ addToMap(java.lang.String)
+comment14.params=
+comment14.target=void\ printHash()
+comment15.params=newLearning
+comment15.target=void\ learn(java.lang.String)
+comment2.params=numOfWords
+comment2.target=java.lang.String\ createText(int)
+comment2.text=\n\ \ \ \ public\ void\ analyze1(String\ file)\n\ \ \ \ {\n\ \ \ \ \ \ \ \ String\ line\ \=\ "";\n\ \ \ \ \ \ \ \ try{\n\ \ \ \ \ \ \ \ \ \ \ \ BufferedReader\ br\ \=\ new\ BufferedReader(new\ FileReader(file));\n\ \ \ \ \ \ \ \ \ \ \ \ \ while\ ((line\ \=\ br.readLine())\ \!\=\ null)\ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ //\ line\ +\=\ "\ $$$";\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ String[]\ tempArr\ \=\ line.split("\\\\s+");\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if(tempArr[0].length()\ >\ 1)\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ startingWords.add(tempArr[0]);\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.addToMap(tempArr);\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ catch\ (Exception\ ex){\n\ \ \ \ \ \ \ \ \ \ \ \ \ ex.printStackTrace();\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("something\ really\ wrong\ happened.");\n\ \ \ \ \ \ \ \ \ \ \ \ return;\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \n\ \ \ \ }\n
+comment3.params=s
+comment3.target=int\ getOrder(java.lang.String)
+comment4.params=input
+comment4.target=java.lang.String\ getNextWord(java.lang.String)
+comment5.params=s\ order
+comment5.target=java.util.Hashtable\ createMap(java.lang.String,\ int)
+comment5.text=\n\ \ \ \ public\ void\ addToMap(String[]\ arr)\n\ \ \ \ {\n\ \ \ \ \ \ \ \ String[]\ textList\ \=\ arr;\ \ //Initializing\ variables\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ //Hashtable<String,ArrayList<String>>\ has\ \=\ new\ Hashtable<String,ArrayList<String>>();\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ String\ key\ \=\ "";\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ for(int\ c\ \=\ 0;\ c<textList.length-order;\ c++)\ //This\ for-loop\ puts\ together\ the\ Hashtable\n\ \ \ \ \ \ \ \ {\ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ for\ (int\ x\ \=\ 0\ ;\ x\ <\ order\ ;\ x++)\ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ key\ +\=\ textList[c+x]\ +\ "\ ";\n\ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ //System.out.println(key);\n\ \ \ \ \ \ \ \ \ \ \ \ if\ (has.containsKey(key))\n\ \ \ \ \ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ has.get(key).add(textList[c+order]);\n\ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \ \ else\n\ \ \ \ \ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ArrayList<String>\ a\ \=\ new\ ArrayList<String>();\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a.add(textList[c+order]);\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ has.put(key,a);\n\ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \ \ key\ \=\ "";\n\ \ \ \ \ \ \ \ }\n\ \ \ \ }\n
+comment6.params=
+comment6.target=void\ initializeOrders()
+comment7.params=has
+comment7.target=int\ determineMax(java.util.Hashtable)
+comment8.params=has
+comment8.target=int\ determineMin(java.util.Hashtable)
+comment9.params=s
+comment9.target=void\ initializeHashArry(java.lang.String)
+numComments=16
